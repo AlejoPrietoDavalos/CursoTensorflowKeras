@@ -1,0 +1,77 @@
+{
+    "class_name": "Sequential",
+    "config": [
+        {
+            "class_name": "Dense",
+            "config": {
+                "kernel_constraint": null,
+                "kernel_regularizer": null,
+                "activation": "relu",
+                "activity_regularizer": null,
+                "bias_constraint": null,
+                "bias_regularizer": null,
+                "batch_input_shape": [
+                    null,
+                    9
+                ],
+                "use_bias": true,
+                "kernel_initializer": "random_normal",
+                "input_dim": 9,
+                "dtype": "float32",
+                "name": "dense_370",
+                "units": 341,
+                "trainable": true
+            }
+        },
+        {
+            "class_name": "Dropout",
+            "config": {
+                "name": "dropout_247",
+                "rate": 0.05896597020396623,
+                "trainable": true
+            }
+        },
+        {
+            "class_name": "Dense",
+            "config": {
+                "kernel_constraint": null,
+                "kernel_regularizer": null,
+                "activation": "relu",
+                "activity_regularizer": null,
+                "bias_constraint": null,
+                "bias_regularizer": null,
+                "use_bias": true,
+                "kernel_initializer": "random_normal",
+                "input_dim": null,
+                "name": "dense_371",
+                "units": 603,
+                "trainable": true
+            }
+        },
+        {
+            "class_name": "Dropout",
+            "config": {
+                "name": "dropout_248",
+                "rate": 0.4425314770811185,
+                "trainable": true
+            }
+        },
+        {
+            "class_name": "Dense",
+            "config": {
+                "kernel_constraint": null,
+                "kernel_regularizer": null,
+                "activation": "linear",
+                "activity_regularizer": null,
+                "bias_constraint": null,
+                "bias_regularizer": null,
+                "use_bias": true,
+                "kernel_initializer": "random_normal",
+                "input_dim": null,
+                "name": "dense_372",
+                "units": 1,
+                "trainable": true
+            }
+        }
+    ]
+}
