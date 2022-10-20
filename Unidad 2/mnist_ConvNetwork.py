@@ -43,6 +43,7 @@ model = ConvClassifier_Keras(
     [32, 64],
     [(3,3), (3,3)],
     ['relu', 'relu'],
+    False,
     [1024, 1024, n_classes],
     ['relu', 'relu', 'softmax'],
     optimizer,

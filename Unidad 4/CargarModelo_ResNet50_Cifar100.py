@@ -47,11 +47,11 @@ for layer in resnet_model.layers:
 
 
 # Create a new model instance
-model.load_weights('Unidad 4/ResNet50_cifar100.h5')
+model.load_weights('ResNet50_cifar100.h5')
 y_pred = model.predict(x_test, verbose=1)
 
 
-'''
+
 y_true = np.argmax(y_test, axis=1) 
 y_model = np.argmax(y_pred, axis=1)
 CM = confusion_matrix(y_true, y_model)
@@ -75,13 +75,4 @@ plt.imshow(CM, cmap='jet')
 plt.xticks(np.arange(100), str_labels,rotation=90)  # Set text labels and properties.
 plt.yticks(np.arange(100), str_labels,rotation=0)  # Set text labels and properties.
 plt.colorbar()
-plt.show()
-
-
-
-
-
-
-
-
-'''
+plt.savefig("OutputRed.png")

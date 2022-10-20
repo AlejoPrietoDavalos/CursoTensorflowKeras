@@ -117,7 +117,7 @@ end_time = time.time()
 print('\nElapsed Convolutional Model training time: {:.5f} seconds'.format(end_time-start_time))
 
 
-model.save('./src/ResNet50_cifar100.h5')
+model.save('ResNet50_cifar100.h5')
 
 history.history.keys()
 
